@@ -1,0 +1,39 @@
+# ===== Secrets - NEVER commit API keys =====
+.env
+*.key
+secrets.*
+*hunter*key*
+
+# ===== Python =====
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# ===== OSINT output / results =====
+# These contain REAL enumerated emails and scan data.
+# Keep them OUT of a public repo (privacy). Use a private repo if you must include them.
+*.csv
+harvester_out.*
+screenshots/
+active_out/
+acorns_scree*/
+
+# ===== Images / generated figures =====
+*.png
+*.jpg
+*.jpeg
+
+# ===== Deliverable documents (contain real data / assessment write-ups) =====
+*.docx
+# keep only the repo README; ignore other markdown write-ups
+*.md
+!README.md
+
+# ===== Malware samples - NEVER upload live malicious code =====
+SAMPLE_*
+malware_only*
+original_full*
+*.js.txt
+defender_*
